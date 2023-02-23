@@ -70,7 +70,7 @@ function updateDOM(){
     }, second);
 }
 
-console.log(today);
+
 
 function updateCountdown(e){
     e.preventDefault();
@@ -110,7 +110,7 @@ function reset(){
 }
 function restorePreviousCountdown(){
     let savedCountdownStr = localStorage.getItem('countdown')
-console.log(savedCountdownStr)
+
     if (savedCountdownStr){
         inputContainer.hidden = true;
         savedCountdown = JSON.parse(savedCountdownStr);
